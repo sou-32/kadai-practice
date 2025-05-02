@@ -1,0 +1,9 @@
+h1{
+    color: #4444aa;
+    font-size: 150%; /*　デフォルトのテキストサイズの1.5倍 */
+    text-align: center;
+}
+button{
+    padding: 0px;
+ 
+}
