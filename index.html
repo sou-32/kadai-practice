@@ -36,38 +36,43 @@
 
         <div></div>
         <!-- <div id = "Minutes"></div> -->
-        <button class="counter" value="1" onclick="handleClick(this)">-1</button>
+    <span style="letter-spacing: 20px;">
+        <span><span id = "Month" ></span></span>月
+        <span id="Dates"></span>日
+        <span id="nowpush"><span id = "Hour" ></span></span>時
+        <span id="Minutes">00</span>分
+    </span>
+        <br>
+            <button class="counter" value="-4" onclick="handleClick(this)">-1</button>
+            <button class="counter" value="-3" onclick="handleClick(this)">+1</button><!-- 月のプラマイ -->
 
-        <span id="nowpush"><span id = "Hour" ></span></span>
+            <button class="counter" value="-2" onclick="handleClick(this)" style="margin-left: 25px;">-1</button>
+            <button class="counter" value="-1" onclick="handleClick(this)">+1</button><!--　日のプラマイ-->
 
-        <button class="counter" value="2" onclick="handleClick(this)">+1</button>
-        時
-        <button class="chose" value="3" onclick="handleClick(this)"></button>
-        00分 
-        <button class="chose" value="4" onclick="handleClick(this)"></button>
-        30分
+            <button class="counter" value="1" onclick="handleClick(this)" style="margin-left: 25px;">-1</button>
+            <button class="counter" value="2" onclick="handleClick(this)">+1</button> <!--時間のプラマイ-->
+
+            <button class="chose" value="3" onclick="handleClick(this)" style="margin-left: 25px;"></button>00分 
+            <button class="chose" value="4" onclick="handleClick(this)"></button>30分
+        </br>
     </div>
-
-    <div class="result">水3.4:webデザイン : Moodle 12時30分</div>
-    <button class="entry" value="100" onclick="handleClick(this)">登録</button>
+    <button class="entry" value="0" onclick="handleClick(this)">登録</button>
  
 
     <table border="1">
-        <tr>
-            <th>時限:教科名:提出方法</th>
-            <th>提出期限</th>
-        </tr>
-        <tr>
-            <td>月1:デジタルコンテンツ基礎:Moodle</td>
-            <td>15時30分</td>
-        </tr>
-        <tr>
-            <td>水3.4:webデザイン:Moodle</td>
-            <td>15時30分</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>時限:教科名:提出方法</th>
+                <th>提出期限</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
     </table>
     
-    <div id="result_time"></div>
+
+    <div id="result_class_time"></div>
     <script src="app.js"></script>
 
 </body>
