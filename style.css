@@ -24,9 +24,12 @@ h1{
 }
 /* class */
 .classwork button{
-    padding: 0px;
+    padding: 10px;
     width: 100%;
     border-radius: 10px;
+}
+.classwork button:active{
+    background: #e00000;
 }
 .counter{
     width: 50px;
@@ -52,16 +55,26 @@ h1{
 .result{
     background: white;
     text-align: center;
+    margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
 }
 .entry{
+    width:70px;
+    margin: 0 auto;
+    display: block;
     color: white;
     background: #ff3333;
     margin-top: 10px;
-    padding: 10px;
-    text-align: center;
+    padding: 10px; 
 }
+
 hr{
     border: 1px solid #eeeeff;
+}
+table{
+    margin: 0 auto;
+    margin-top: 10px;
+    background: white;
+    border-radius: 5px;
 }
