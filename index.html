@@ -14,64 +14,61 @@
     <h1>課題管理システム</h1>
 
     <div class="classwork">
-        <button value="1">月1:デジタルコンテンツ基礎 : L-cam</button>
-        <br><button value="2">月2:キャリア意識形成 : Moodle</button></br>
+        <button value="5" onclick="handleClick(this)">月1:デジタルコンテンツ基礎 : L-cam</button>
+        <br><button value="6" onclick="handleClick(this)">月2:キャリア意識形成 : Moodle</button></br>
         <hr>
-        <button value="3">火2:サウンドメディア論 : Moodle</button>
-        <br><button value="4">火3,4:画像処理</button></br>
+        <button value="7" onclick="handleClick(this)">火2:サウンドメディア論 : Moodle</button>
+        <br><button value="8" onclick="handleClick(this)">火3,4:画像処理</button></br>
         <hr>
-        <button value="5">水1:カラーデザイン : Moodle</button>
-        <br><button value="6">水2:TOEIC : Moodle</button></br>
-        <button value="7">水3,4:webデザイン : Moodle</button>
+        <button value="9" onclick="handleClick(this)">水1:カラーデザイン : Moodle</button>
+        <br><button value="10" onclick="handleClick(this)">水2:TOEIC : Moodle</button></br>
+        <button value="11" onclick="handleClick(this)">水3,4:webデザイン : Moodle</button>
         <hr>
-        <button value="8">木2:メディア産業論 : Moodle</button>
-        <button value="9">木3:特別講義1 : Moodle</button>
-        <br><button value="10">木4:ユーザーインタフェース : Moodle</button></br>
+        <button value="12" onclick="handleClick(this)">木2:メディア産業論 : Moodle</button>
+        <button value="13" onclick="handleClick(this)">木3:特別講義1 : Moodle</button>
+        <br><button value="14" onclick="handleClick(this)">木4:ユーザーインタフェース : Moodle</button></br>
         <hr>
-        <button value="11">金2:コンピュータネットワーク : Moodle</button>
-        <br><button value="12">金3,4:CGプログラミング : Moodle</button></br>
+        <button value="15" onclick="handleClick(this)">金2:コンピュータネットワーク : Moodle</button>
+        <br><button value="16" onclick="handleClick(this)">金3,4:CGプログラミング : Moodle</button></br>
     </div>
 
     <div class="timebg">
 
         <div></div>
         <!-- <div id = "Minutes"></div> -->
-        <button class="counter" id = "countnum" value="13">-1</button>
-        <span id = "Hour" ></span>
-        <button class="counter" id = "countnum" value="14">+1</button>
+        <button class="counter" value="1" onclick="handleClick(this)">-1</button>
+
+        <span id="nowpush"><span id = "Hour" ></span></span>
+
+        <button class="counter" value="2" onclick="handleClick(this)">+1</button>
         時
-        <button class="chose" value="15"></button>
-        30分 
-        <button class="chose" value="16"></button>
-        00分
+        <button class="chose" value="3" onclick="handleClick(this)"></button>
+        00分 
+        <button class="chose" value="4" onclick="handleClick(this)"></button>
+        30分
     </div>
 
     <div class="result">水3.4:webデザイン : Moodle 12時30分</div>
-    <button class="entry">登録</button>
+    <button class="entry" value="100" onclick="handleClick(this)">登録</button>
  
 
     <table border="1">
         <tr>
-            <th>時限</th>
-            <th>教科名</th>
-            <th>提出方法</th>
+            <th>時限:教科名:提出方法</th>
             <th>提出期限</th>
         </tr>
         <tr>
-            <td>月1</td>
-            <td>デジタルコンテンツ基礎</td>
-            <td>L-cam</td>
+            <td>月1:デジタルコンテンツ基礎:Moodle</td>
             <td>15時30分</td>
         </tr>
         <tr>
-            <td>水3.4</td>
-            <td>webデザイン</td>
-            <td>Moodle</td>
+            <td>水3.4:webデザイン:Moodle</td>
             <td>15時30分</td>
         </tr>
     </table>
-
-    <script src="firestore.js" type="module" ></script>
+    
+    <div id="result_time"></div>
     <script src="app.js"></script>
+
 </body>
 </html>
