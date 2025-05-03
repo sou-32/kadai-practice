@@ -1,12 +1,67 @@
+@font-face {
+    font-family: "myfont"; 
+    src: url("font/NotoSansJP-VariableFont_wght.ttf") format("truetype"); 
+    font-display: swap; 
+}
+
+body{
+    background: #4444aa;
+    font-family: "myfont",sans-serif; 
+}
 h1{
-    color: #4444aa;
+    color: #cccc44;
     font-size: 150%; /*　デフォルトのテキストサイズの1.5倍 */
     text-align: center;
 }
-button{
+/*  */
+.classwork{
+    background: #4444aa;
+    border: 5px solid black;
+    background: gray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+/* class */
+.classwork button{
     padding: 0px;
     width: 100%;
+    border-radius: 10px;
+}
+.counter{
+    width: 50px;
+    height: 50px;
+    font-size: large;
+}
+.chose{
+    width: 15px;
+    height: 15px;
+}
+/* 時間を決める部分 */
+.timebg{
+    text-align: center;
+    background: white; 
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 5px solid #222222;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.result{
+    background: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.entry{
+    color: white;
+    background: #ff3333;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
 }
 hr{
-    border: 2px solid gray;
+    border: 1px solid #eeeeff;
 }

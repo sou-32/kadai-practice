@@ -12,24 +12,43 @@
 </head>
 <body>
     <h1>課題管理システム</h1>
-    <div class="button-grid">
-        <button value="1">月1:デジタルコンテンツ基礎</button>
-        <br><button value="2">月2:キャリア意識形成</button></br>
+
+    <div class="classwork">
+        <button value="1">月1:デジタルコンテンツ基礎 : L-cam</button>
+        <br><button value="2">月2:キャリア意識形成 : Moodle</button></br>
         <hr>
-        <button value="3">火2:サウンドメディア論</button>
+        <button value="3">火2:サウンドメディア論 : Moodle</button>
         <br><button value="4">火3,4:画像処理</button></br>
         <hr>
-        <button value="5">水1:カラーデザイン</button>
-        <br><button value="6">水2:TOEIC</button></br>
-        <button value="7">水3,4:webデザイン</button>
+        <button value="5">水1:カラーデザイン : Moodle</button>
+        <br><button value="6">水2:TOEIC : Moodle</button></br>
+        <button value="7">水3,4:webデザイン : Moodle</button>
         <hr>
-        <button value="8">木2:メディア産業論</button>
-        <button value="9">木3:特別講義1</button>
-        <br><button value="10">木4:ユーザーインタフェース</button></br>
+        <button value="8">木2:メディア産業論 : Moodle</button>
+        <button value="9">木3:特別講義1 : Moodle</button>
+        <br><button value="10">木4:ユーザーインタフェース : Moodle</button></br>
         <hr>
-        <button value="11">金2:コンピュータネットワーク</button>
-        <br><button value="12">金3,4:CGプログラミング</button></br>
+        <button value="11">金2:コンピュータネットワーク : Moodle</button>
+        <br><button value="12">金3,4:CGプログラミング : Moodle</button></br>
     </div>
-    <script src="app.js" type="module" ></script>
+
+    <div class="timebg">
+
+        <div></div>
+        <!-- <div id = "Minutes"></div> -->
+        <button class="counter" id = "countnum" value="13">-1</button>
+        <span id = "Hour" ></span>
+        <button class="counter" id = "countnum" value="14">+1</button>
+        時
+        <button class="chose" value="15"></button>
+        30分 
+        <button class="chose" value="16"></button>
+        00分
+    </div>
+    <div class="result">水3.4:webデザイン : Moodle 12時30分</div>
+    <button class="entry">登録</button>
+ 
+    <script src="firestore.js" type="module" ></script>
+    <script src="app.js"></script>
 </body>
 </html>
