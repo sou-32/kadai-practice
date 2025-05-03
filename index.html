@@ -33,28 +33,26 @@
     </div>
 
     <div class="timebg">
+            <!-- <div id = "Minutes"></div> -->
+        <span style="letter-spacing: 15px;">
+            <span><span id = "Month" ></span></span>月
+            <span id="Dates"></span>日
+            <span id="nowpush"><span id = "Hour" ></span></span>時
+            <span id="Minutes">00</span>分
+        </span>
+            <br>
+                <button class="counter" value="-4" onclick="handleClick(this)">-1</button>
+                <button class="counter" value="-3" onclick="handleClick(this)">+1</button><!-- 月のプラマイ -->
 
-        <div></div>
-        <!-- <div id = "Minutes"></div> -->
-    <span style="letter-spacing: 20px;">
-        <span><span id = "Month" ></span></span>月
-        <span id="Dates"></span>日
-        <span id="nowpush"><span id = "Hour" ></span></span>時
-        <span id="Minutes">00</span>分
-    </span>
-        <br>
-            <button class="counter" value="-4" onclick="handleClick(this)">-1</button>
-            <button class="counter" value="-3" onclick="handleClick(this)">+1</button><!-- 月のプラマイ -->
+                <button class="counter" value="-2" onclick="handleClick(this)" style="margin-left: 10px;">-1</button>
+                <button class="counter" value="-1" onclick="handleClick(this)">+1</button><!--　日のプラマイ-->
 
-            <button class="counter" value="-2" onclick="handleClick(this)" style="margin-left: 25px;">-1</button>
-            <button class="counter" value="-1" onclick="handleClick(this)">+1</button><!--　日のプラマイ-->
+                <button class="counter" value="1" onclick="handleClick(this)" style="margin-left: 10px;">-1</button>
+                <button class="counter" value="2" onclick="handleClick(this)">+1</button> <!--時間のプラマイ-->
 
-            <button class="counter" value="1" onclick="handleClick(this)" style="margin-left: 25px;">-1</button>
-            <button class="counter" value="2" onclick="handleClick(this)">+1</button> <!--時間のプラマイ-->
-
-            <button class="chose" value="3" onclick="handleClick(this)" style="margin-left: 25px;"></button>00分 
-            <button class="chose" value="4" onclick="handleClick(this)"></button>30分
-        </br>
+                <button class="chose" value="3" onclick="handleClick(this)" style="margin-left: 10px;"></button>00分 
+                <button class="chose" value="4" onclick="handleClick(this)"></button>30分
+            </br>
     </div>
     <button class="entry" value="0" onclick="handleClick(this)">登録</button>
  
