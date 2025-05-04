@@ -128,6 +128,7 @@ function handleClick(buttonNum){
     for(let x = 5; x < 17; x++){
         if(value==x){
             classNum = x;
+            console.log("これはクラスの番号です",classNum);
         }
     }
     //Chose_bgColor3に、現在の3ボタン目の色情報を格納、Chose_bgColor4も同様に格納
@@ -154,6 +155,11 @@ function handleClick(buttonNum){
     }
     if(value==0){
         //設定した時間を取得・表示
+        if(classNum==0){
+            alert("授業名を設定してください");
+            return;
+        }
+  
         const time = Month + "月" + dates + "日" + Hour + "時" + minutes_numstring + "分";
         document.getElementById('result_class_time').innerHTML = className[classNum-5]+time;
         //times作成
@@ -207,6 +213,7 @@ function handleClick(buttonNum){
                 
             }
             else{
+
                 const myTag = [],myString = [],myNumber = [];
                 myTag.push(time_tag);
                 myString.push(time);
@@ -222,6 +229,24 @@ function handleClick(buttonNum){
         //
   
 
+    }
+    if(value==-5){
+        if(classNum==0){
+            alert("授業名を設定してください");
+            return;
+        }
+        ref.get().then((docSnapshot) => {
+            if (docSnapshot.exists) {
+                const data = docSnapshot.data();
+                const myNumber = data.myNumber || [];
+                for(let i = 0; i<myNumber.length; i++){
+                    if(myNumber[i]==classNum){
+                        const L = myNumber[i];
+                        console.log("これが、削除するべき番号です",L);
+                    }
+                }
+            }
+        });
     }
 
 }

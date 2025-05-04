@@ -59,12 +59,20 @@ h1{
 }
 .entry{
     width:70px;
-    margin: 0 auto;
-    display: block;
     color: white;
     background: #ff3333;
     margin-top: 10px;
     padding: 10px; 
+    margin-right: 5%;
+}
+.delete{
+    width:70px;
+    color: white;
+    background: #3333ff;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding: 10px; 
+
 }
 
 hr{
