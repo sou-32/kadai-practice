@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgb(249, 249, 249);
+    background: rgb(237, 236, 255);
     font-family: "myfont",sans-serif; 
 }
 h1{
@@ -16,8 +16,8 @@ h1{
 /*  */
 .classwork{
     background: #0056b3;
-    border: 5px solid black;
-    background: gray;
+    border: 2px solid #666666;
+    background: linear-gradient(rgba(238,130,238,0.3) 20%,rgba(255,0,0,0.3) 40%,rgba(0,0,255,0.3) 60%,rgba(60,179,113,0.3) 80%,rgba(255,165,0,0.3)100%);
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
@@ -47,7 +47,7 @@ h1{
     font-size: 20px;
     margin-top: 10px;
     padding: 5px;
-    border: 5px solid #222222;
+    border: 2px solid #666666;
     border-radius: 10px;
 }
 .result{
@@ -83,4 +83,9 @@ table{
     margin-top: 10px;
     background: rgb(249, 249, 249);
     border-radius: 5px;
+    border-collapse: collapse;
+}
+th{
+    background: #3377fa;
+    color: aliceblue;
 }
