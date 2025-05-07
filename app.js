@@ -104,13 +104,13 @@ function handleClick(buttonNum){
     if(value==1){
         Hour -= 1;
         if( Hour < 0){
-            Hour = 23;
+            Hour = 24;
         }
         document.getElementById("nowpush").innerHTML = Hour;
     }
     if(value==2){
         Hour += 1;
-        if(Hour >= 24){
+        if(Hour > 24){
             Hour = 0;
         }
         document.getElementById("nowpush").innerHTML = Hour;
@@ -210,6 +210,7 @@ function handleClick(buttonNum){
                 }).catch(()=>{
                     console.log("保存できたよ！");
                 });
+        
                 
             }
             else{
@@ -227,8 +228,6 @@ function handleClick(buttonNum){
             }
         });
         //
-  
-
     }
     if(value==-5){
         if(classNum==0){

@@ -5,17 +5,17 @@
 }
 
 body{
-    background: #4444aa;
+    background: rgb(249, 249, 249);
     font-family: "myfont",sans-serif; 
 }
 h1{
-    color: #cccc44;
+    color: #0056b3;
     font-size: 150%; /*　デフォルトのテキストサイズの1.5倍 */
     text-align: center;
 }
 /*  */
 .classwork{
-    background: #4444aa;
+    background: #0056b3;
     border: 5px solid black;
     background: gray;
     border-radius: 5px;
@@ -51,7 +51,7 @@ h1{
     border-radius: 10px;
 }
 .result{
-    background: white;
+    background: rgb(249, 249, 249);
     text-align: center;
     margin-top: 10px;
     margin-left: 10%;
@@ -59,7 +59,7 @@ h1{
 }
 .entry{
     width:70px;
-    color: white;
+    color: rgb(249, 249, 249);
     background: #ff3333;
     margin-top: 10px;
     padding: 10px; 
@@ -67,7 +67,7 @@ h1{
 }
 .delete{
     width:70px;
-    color: white;
+    color: rgb(249, 249, 249);
     background: #3333ff;
     margin-top: 10px;
     margin-left: 5%;
@@ -76,11 +76,11 @@ h1{
 }
 
 hr{
-    border: 1px solid #eeeeff;
+    border: 1px solid rgb(249, 249, 249);
 }
 table{
     margin: 0 auto;
     margin-top: 10px;
-    background: white;
+    background: rgb(249, 249, 249);
     border-radius: 5px;
 }
