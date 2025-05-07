@@ -21,6 +21,7 @@ h1{
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
+    
 }
 /* class */
 .classwork button{
@@ -88,4 +89,5 @@ table{
 th{
     background: #3377fa;
     color: aliceblue;
+    text-shadow:1px 2px 3px black;
 }
